@@ -15,7 +15,9 @@ First of all let's create the GeometricalForm class:
 geometrical_form.py
 
 ```python
-
+class GeometricalForm(Prototype):
+    def __init__(self):
+        self.points = []
 ```
 
 Now let's create a a Prototype interface and implement it on GeometricalForm:
@@ -41,6 +43,8 @@ geometrical_forms_registry.py
 ```
 
 Now let's create a client code to use the all the code we created:
+
+main.py
 
 ```python
 
